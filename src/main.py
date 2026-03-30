@@ -26,7 +26,7 @@ def main():
 
     # Save cleaned dataset
     df = pd.DataFrame(data)
-    df.to_excel("cleaned_dataset.xlsx", index=False)
+    df.to_csv("cleaned_dataset.csv", index=False)
 
     # Feature extraction
     X, y = prepare_features(data, drop_runtime=True)
